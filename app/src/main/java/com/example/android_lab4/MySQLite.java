@@ -12,7 +12,7 @@ public class MySQLite extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
 
-    public MySQLite(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+    public MySQLite(@Nullable Context context) {
         super(context, "animalsDB",null, DATABASE_VERSION);
     }
 
