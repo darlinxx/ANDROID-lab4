@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">ANDROID-lab4</string>
     <string name="name">Nazwa</string>
+    <string name="opis">Opis</string>
+    <string name="gatunek">Gatunek</string>
+    <string name="kolor">Kolor</string>
+    <string name="wielkosc">Wielkość</string>
     <string name="button">GUZIK</string>
 </resources>

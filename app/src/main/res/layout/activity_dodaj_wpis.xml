@@ -8,16 +8,54 @@
     tools:context=".DodajWpis">
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:id="@+id/kolor"
+        android:layout_width="@dimen/width"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="494dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="415dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/name"
+        android:text="@string/kolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/wielkosc"
+        android:layout_width="@dimen/width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="364dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/wielkosc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/opis"
+        android:layout_width="@dimen/width"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="189dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/opis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,15 +63,27 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="212dp"
+        android:layout_width="@dimen/width"
         android:layout_height="44dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="427dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="123dp"
         android:onClick="wyslij"
         android:text="@string/button"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="99dp"
         tools:layout_editor_absoluteY="211dp" />
+
+    <Spinner
+        android:id="@+id/gatunek"
+        android:layout_width="@dimen/width"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="468dp"
+        android:tooltipText="@string/gatunek"
+        tools:visibility="visible" />
+
 </android.widget.RelativeLayout>
